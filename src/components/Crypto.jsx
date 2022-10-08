@@ -4,7 +4,7 @@ import axios from 'axios'
 function Crypto(props) {
     const yesterday = new Date(new Date());
     yesterday.setDate(yesterday.getDate()-1);
-    const allAssets = ["ETH","BTC","LTC","SOL","ADA","LINK","MATIC","DOT"]
+    const allAssets = ["ETH","BTC","LTC","SOL","ADA","LINK","MATIC","DOT","QNT","DESO","DOGE","XLM","ATOM","BCH","EOS","COMP","CRO","MKR"]
     const [cryptoData, setCryptoData] = useState([]);
     useEffect(()=>{
         fetchAllCrypto();
