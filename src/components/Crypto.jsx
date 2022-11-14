@@ -36,7 +36,7 @@ function Crypto(props) {
                         <h1 className='font-bold text-xl text-white'>{asset.cryptoAsset}</h1>
                         <h1 className="text-white">${asset.currPrice}</h1>
                         <h1 className="text-white">Recommended Meal:</h1>
-                        <img className="h-[100px] w-[200px]" src={(asset.oldPrice > asset.currPrice) ? "../../sausageMcMuffin.png" : "../../baconEggNCheese.png"} />
+                        <img className="h-[100px] w-[200px]" src={(asset.oldPrice > asset.currPrice) ? "./sausageMcMuffin.webp" : "./baconEggNCheese.webp"} />
                     </div>
                 )
             })}
