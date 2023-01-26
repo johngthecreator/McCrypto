@@ -12,7 +12,7 @@ function Crypto(props) {
     const fetchAllCrypto = () => {
         for( let x in allAssets){
             if (cryptoData.length < 6){
-                axios.get(`https://api.coinbase.com/v2/prices/${allAssets[x]}-USD/spot?date=${yesterday.getFullYear()}-${yesterday.getMonth()}-${yesterday.getDate()}`)
+                axios.get(`https://api.coinbase.com/v2/prices/${allAssets[x]}-USD/spot?date=${yesterday.getFullYear()}-${yesterday.getMonth()+1}-${yesterday.getDate()}`)
                 .then(res=>{
                     let currAsset = res.data.data.base;
                     let oldPrice = res.data.data.amount;
